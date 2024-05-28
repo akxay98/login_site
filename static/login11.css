@@ -26,70 +26,30 @@
     }
     .main
     {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-        min-height: 80rem !important;
-        max-height: fit-content;
+        width: 80% !important;
     }
     .footer .myname, .footer .copyr
     {
         text-align: center !important;
     }
-    #alert1
-    {
-        position: absolute;
-        top: 27% !important;
-        right: 10% !important;
-    }
-    .signin2, .signup2
-    {
-        position: absolute;
-        top: 30% !important;
-        margin: 0 auto;
-        width: 40% !important;
-        height: 40rem !important;
-    }
-    .signin1, .signup1
-    {
-        position: absolute;
-        top: 30% !important;
-        margin: 0 auto;
-        background-color: rgb(232, 229, 229);
-        filter: drop-shadow(0.3rem 0.3rem 0.5rem rgb(53, 53, 53));
-        border-radius: 3rem;
-        height: 40rem !important;
-        width: 80% !important;
-    }
-    .signup1
-    {
-        left: 10% !important;
-    }
-    .signin1
-    {
-        right:10% !important;
-    }
-    .signin2
-    {
-        color: white;
-        left: 10% !important;
-        background: linear-gradient(to right, darkred, rgb(251, 24, 24));
-        border-radius: 3rem 40% 20% 3rem;
-        filter: drop-shadow(0.3rem 0 0.4rem rgb(40, 39, 39));
-        transition: transform 0.4s ease;
-        transform: translateX(100%);
-    }
-    .signup2
-    {
-        color: white;
-        right: 10% !important;
-        background: linear-gradient(to right, red, darkred);
-        border-radius: 40% 3rem 3rem 20%;
-        filter: drop-shadow(-0.3rem 0 0.4rem rgb(40, 39, 39));
-        transition: transform 0.4s ease;
-    }
 }
 
-@media screen and (min-width: 1008px) and (max-width: 1920px) {
+@media screen and (min-width: 1008px) and (max-width: 1200px) {
+    *{
+        margin: 0 auto;
+        font-size: 10px;
+        font-family: 'Montserrat', Cambria, Cochin ;
+    }
+    .redirection
+    {
+        display: none;
+    }
+    .main
+    {
+        width: 80% !important;
+    }
+}
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
     *{
         margin: 0 auto;
         font-size: 12px;
@@ -99,6 +59,7 @@
     {
         display: none;
     }
+    
 }
 
 @media screen and (min-width: 1921px) {
@@ -119,6 +80,14 @@ body
 {
     background-image: linear-gradient(to right, rgb(173, 161, 161), rgb(247, 231, 231));
     background-size: cover; 
+}
+.mainbox
+{
+    display: flex;
+    place-items: center;
+    min-height: 80vh;
+    padding-top: 5rem;
+    max-height: fit-content;
 }
 .redirection
 {
@@ -142,10 +111,12 @@ body
 }
 .main
 {
+    position: relative;
+    margin: 0 auto;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    min-height: 60rem;
-    max-height: fit-content;
+    width: 60%;
+    min-height: 45rem;
 }
 
 /* -----------------------------------------------------css for header and footer----------------------------------------------------- */
@@ -187,8 +158,8 @@ body
 #alert1
 {
     position: absolute;
-    top: 9%;
-    right: 25%;
+    top: -8%;
+    right: 0;
     text-align: right;
     color: red;
     font-weight: 700;
@@ -205,34 +176,34 @@ body
 .signin2, .signup2
 {
     position: absolute;
-    top: 16%;
+    top: 0;
     margin: 0 auto;
-    width: 25%;
+    width: 50%;
     height: 40rem;
 }
 .signin1, .signup1
 {
     position: absolute;
-    top: 16%;
+    top: 0;
     margin: 0 auto;
     background-color: rgb(232, 229, 229);
     filter: drop-shadow(0.3rem 0.3rem 0.5rem rgb(53, 53, 53));
     border-radius: 3rem;
     height: 40rem;
-    width: 50%;
+    width: 100%;
 }
 .signup1
 {
-    left: 25%;
+    left: 0;
 }
 .signin1
 {
-    right: 25%;
+    right: 0;
 }
 .signin2
 {
     color: white;
-    left: 25%;
+    left: 0;
     background: linear-gradient(to right, darkred, rgb(251, 24, 24));
     border-radius: 3rem 40% 20% 3rem;
     filter: drop-shadow(0.3rem 0 0.4rem rgb(40, 39, 39));
@@ -242,7 +213,7 @@ body
 .signup2
 {
     color: white;
-    right: 25%;
+    right: 0;
     background: linear-gradient(to right, red, darkred);
     border-radius: 40% 3rem 3rem 20%;
     filter: drop-shadow(-0.3rem 0 0.4rem rgb(40, 39, 39));
