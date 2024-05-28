@@ -1,0 +1,357 @@
+@media screen and (max-width: 640px) {
+    *{
+        margin: 0 auto;
+        font-size: 6px;
+        font-family: 'Montserrat', Cambria, Cochin ;
+    }
+    .footer .myname, .footer .copyr
+    {
+        text-align: center !important;
+    }
+    .main
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1007px) {
+    *{
+        margin: 0 auto;
+        font-size: 8px;
+        font-family: 'Montserrat', Cambria, Cochin ;
+    }
+    .redirection
+    {
+        display: none;
+    }
+    .main
+    {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        min-height: 80rem !important;
+        max-height: fit-content;
+    }
+    .footer .myname, .footer .copyr
+    {
+        text-align: center !important;
+    }
+    #alert1
+    {
+        position: absolute;
+        top: 27% !important;
+        right: 10% !important;
+    }
+    .signin2, .signup2
+    {
+        position: absolute;
+        top: 30% !important;
+        margin: 0 auto;
+        width: 40% !important;
+        height: 40rem;
+    }
+    .signin1, .signup1
+    {
+        position: absolute;
+        top: 30% !important;
+        margin: 0 auto;
+        background-color: rgb(232, 229, 229);
+        filter: drop-shadow(0.3rem 0.3rem 0.5rem rgb(53, 53, 53));
+        border-radius: 3rem;
+        height: 40rem;
+        width: 80% !important;
+    }
+    .signup1
+    {
+        left: 10% !important;
+    }
+    .signin1
+    {
+        right:10% !important;
+    }
+    .signin2
+    {
+        color: white;
+        left: 10% !important;
+        background: linear-gradient(to right, darkred, rgb(251, 24, 24));
+        border-radius: 3rem 40% 20% 3rem;
+        filter: drop-shadow(0.3rem 0 0.4rem rgb(40, 39, 39));
+        transition: transform 0.4s ease;
+        transform: translateX(100%);
+    }
+    .signup2
+    {
+        color: white;
+        right: 10% !important;
+        background: linear-gradient(to right, red, darkred);
+        border-radius: 40% 3rem 3rem 20%;
+        filter: drop-shadow(-0.3rem 0 0.4rem rgb(40, 39, 39));
+        transition: transform 0.4s ease;
+    }
+}
+
+@media screen and (min-width: 1008px) and (max-width: 1920px) {
+    *{
+        margin: 0 auto;
+        font-size: 12px;
+        font-family: 'Montserrat', Cambria, Cochin ;
+    }
+    .redirection
+    {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1921px) {
+    *{
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: 'Montserrat', Cambria, Cochin ;
+    }
+    .redirection
+    {
+        display: none;
+    }
+}
+
+/* -----------------------------------------------------css for body----------------------------------------------------- */
+
+body
+{
+    background-image: linear-gradient(to right, rgb(173, 161, 161), rgb(247, 231, 231));
+    background-size: cover; 
+}
+.redirection
+{
+    min-height: 80vh;
+    text-align: center;
+}
+.redirection .texts
+{
+    position: relative;
+    top: 30rem;
+}
+.redirection .texts div
+{
+    padding: 4rem;
+    color: red;
+    border: 0.4rem solid red;
+}
+.redirection .texts div h1
+{
+    font-weight: 600;
+}
+.main
+{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    min-height: 80vh;
+    max-height: fit-content;
+}
+
+/* -----------------------------------------------------css for header and footer----------------------------------------------------- */
+
+.header img
+{
+    width: 3rem;
+
+}
+.header h4
+{
+    position: relative;
+    top: 1rem;
+    padding-top: 1rem;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: black;
+    display: inline;
+}
+.footer
+{
+    font-weight: 600;
+    padding-bottom: 1rem;
+    padding-top: 4rem;
+}
+.footer .myname
+{
+    text-align: right;
+}
+.footer .myname a
+{
+    color: blueviolet;
+    text-decoration: none;
+}
+
+/* -----------------------------------------------------css for message----------------------------------------------------- */
+
+#alert1
+{
+    position: absolute;
+    top: 9%;
+    right: 25%;
+    text-align: right;
+    color: red;
+    font-weight: 700;
+    z-index: 10;
+}
+#alert1 input
+{
+    background: transparent;
+    border: none;
+}
+
+/* -----------------------------------------------------css for index.html----------------------------------------------------- */
+
+.signin2, .signup2
+{
+    position: absolute;
+    top: 16%;
+    margin: 0 auto;
+    width: 25%;
+    height: 40rem;
+}
+.signin1, .signup1
+{
+    position: absolute;
+    top: 16%;
+    margin: 0 auto;
+    background-color: rgb(232, 229, 229);
+    filter: drop-shadow(0.3rem 0.3rem 0.5rem rgb(53, 53, 53));
+    border-radius: 3rem;
+    height: 40rem;
+    width: 50%;
+}
+.signup1
+{
+    left: 25%;
+}
+.signin1
+{
+    right: 25%;
+}
+.signin2
+{
+    color: white;
+    left: 25%;
+    background: linear-gradient(to right, darkred, rgb(251, 24, 24));
+    border-radius: 3rem 40% 20% 3rem;
+    filter: drop-shadow(0.3rem 0 0.4rem rgb(40, 39, 39));
+    transition: transform 0.4s ease;
+    transform: translateX(100%);
+}
+.signup2
+{
+    color: white;
+    right: 25%;
+    background: linear-gradient(to right, red, darkred);
+    border-radius: 40% 3rem 3rem 20%;
+    filter: drop-shadow(-0.3rem 0 0.4rem rgb(40, 39, 39));
+    transition: transform 0.4s ease;
+}
+#signin2, #signup1
+{
+    visibility: hidden;
+}
+.box1
+{
+    position: relative;
+    top: 30%;
+    text-align: center;
+    margin-left: 8%;
+    width: 35%;
+}
+.box1 .fpwd
+{
+    font-weight: bold;
+    opacity: 0.5;
+    text-decoration: none;
+}
+.box1 .fpwd a
+{
+    color: black;
+    text-decoration: none;
+}
+.box2
+{
+    position: relative;
+    top: 3%;
+    text-align: center;
+    margin-right: 8%;
+    width: 35%;
+}
+.box1 div, .box2 div
+{
+    padding-bottom: 1rem;
+}
+.tog
+{
+    position: relative;
+    top: 30%;
+    width: 80%;
+    padding-top: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+.btn1
+{
+    position: relative;
+    top: 1rem;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10rem;
+    background-color: red;
+    border: 0.2rem solid red;
+    color: white;
+    font-weight: bold;
+}
+.btn2
+{
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10rem;
+    background-color: transparent;
+    border: 0.2rem solid white;
+    color: white;
+    font-weight: bold;
+}
+.main input[type=text], .main input[type=password], .main input[type=email]
+{
+    border: none;
+    background-color: #D3D3D3;
+    font-weight: bold;
+    border-radius: 1rem;
+}
+label
+{
+    opacity: 0.5;
+    font-weight: bold;
+}
+.main h1
+{
+    font-weight: bolder;
+}
+
+/* -----------------------------------------------------css for home.html----------------------------------------------------- */
+
+.home
+{
+    min-height: 80vh;
+    max-height: fit-content;
+}
+.home .nameone
+{
+    padding-top: 5rem;
+}
+.home input
+{
+    position: relative;
+    top: 1rem;
+    width: 12rem;
+    height: 3rem;
+    border-radius: 10rem;
+    background-color: red;
+    border: 0.2rem solid red;
+    color: white;
+    font-weight: bold;
+}
+
+

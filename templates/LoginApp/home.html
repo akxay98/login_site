@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class="container home">
+            <div class="nameone"><h1>HI {{fname}}</h1></div>
+            <br>
+            <form method="POST">
+                {% csrf_token %}
+                <input type="submit" value="SIGN OUT">
+            </form>
+    </div>
+{% endblock %}

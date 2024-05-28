@@ -1,0 +1,107 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <div class='container'>
+        <div class="redirection">
+            <div class='texts'>
+                <div>
+                    <h1>Please View This Site In Landscape Mode or Desktop Mode</h1>
+                    <h1>Thank You</h1>
+                </div>
+            </div>
+        </div>
+        <div class='main'>
+                <div class="messages">
+                    {% if messages %}
+                        {% for msg in messages %}
+                            <div class="alert alert-{{msg.tags}}" role="alert" id='alert1'>
+                                <strong>Hey !</strong> {{msg}}
+                                <input type="button" value='X' onclick='message_hide()'>
+                            </div>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+
+                <div class='signin1' id='signin1'>
+                    <div class='box1'>
+                        <div><h1>Sign In</h1></div>
+                        <form method='POST'>
+                            {% csrf_token %}
+                            <div class='form-floating'>
+                            <input type='text' class='form-control' name='unamel' id='unamel' placeholder='Enter Username' required>
+                            <label for='unamel'>Username</label>
+                            </div>
+                            
+                            <div class='form-floating'>
+                            <input type='password' class='form-control' name='pwdl' id='pwdl' placeholder='Enter Password' required>
+                            <label for='pwdl'>Password</label>
+                            </div>
+
+                            <div class="fpwd"><a href="#">Forgot Your Password?</a></div>
+
+                            <div class='form-group'><a href='home/'><input type='submit' class='btn1' value='SIGN IN' id='login' name='submit' required></a></div>
+            
+                        </form>
+                    </div>
+                </div>
+                <div class='signup1' id='signup1'>
+                    <div class="box2">
+                        <div><h1>Sign Up</h1></div>
+                        <form method='POST'>
+                            {% csrf_token %}
+                            <div class='form-floating'>
+                            <input type='text' class='form-control' name='uname' id='uname' placeholder='Create a Username' required>
+                            <label for='uname'>User Name</label>
+                            </div>
+
+                            <div class='form-floating'>
+                            <input type='text' class='form-control' name='fname' id='fname' placeholder='Type your Firstname' required>
+                            <label for='fname'>First Name</label>
+                            </div>
+
+                            <div class='form-floating'>
+                            <input type='text' class='form-control' name='lname' id='lname' placeholder='Type Your Lastname' required>
+                            <label for='lname'>Last Name</label>
+                            </div>
+
+                            <div class='form-floating'>
+                            <input type='email' class='form-control' name='email' id='email' placeholder='Enter Email Address' required>
+                            <label for='email'>Email</label>
+                            </div>
+
+                            <div class='form-floating'>
+                            <input type='password' class='form-control' name='pwd' id='pwd' placeholder='Create Password' required>
+                            <label for='pwd'>New Password</label>
+                            </div>
+
+                            <div class='form-floating'>
+                            <input type='password' class='form-control' name='cpwd' id='cpwd' placeholder='Confirm Password' required>
+                            <label for='cpwd'>Confirm Password</label>
+                            </div>
+                        
+                            <div class='form-group'><a href=''><input type='submit' class='btn1' value='SIGN UP' name='submit' id='signup'></a>
+                            </div>
+
+                        </form>
+                    </div>    
+                </div>
+                <div class='signup2' id='signup2'>
+                    <div class='tog'>
+                    <h1>Hello, There!</h1><br>
+                    <p>If you are new here click on signup to register your account with us</p><br>
+                    <input type="button" class="btn2" value="SIGN UP" onclick="func()">
+                    </div>
+                </div>
+                <div class='signin2' id='signin2'>
+                    <div class='tog'>
+                    <h1>Welcome Friend</h1><br>
+                    <p>Enter your personal details to login and use all of site features and explore more</p><br>
+                    <input type="button" class="btn2" value="SIGN IN" onclick="func1()">
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!--container end-->
+    
+
+{% endblock %}
