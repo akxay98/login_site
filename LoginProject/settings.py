@@ -128,9 +128,10 @@ STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR/'assets'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
-# STATICFILES_DIRS = [
-#     STATIC_DIR,
-# ]
+
+STATICFILES_DIRS = [
+    STATIC_DIR,
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
