@@ -144,7 +144,7 @@ body
 {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    min-height: 80vh;
+    min-height: 60rem;
     max-height: fit-content;
 }
 
@@ -170,6 +170,7 @@ body
     font-weight: 600;
     padding-bottom: 1rem;
     padding-top: 4rem;
+    z-index: 2;
 }
 .footer .myname
 {
